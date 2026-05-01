@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/NlhunNngAlHx4aO4pDHi5kIiZ1M</id>
+  <title>arXiv Query: search_query=all:"LightGBM" AND all:"Ke"&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-05-01T12:36:02Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22LightGBM%22+AND+all:%22Ke%22&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2311.06260v1</id>
+    <title>College Dropout Factors: An Analysis with LightGBM and Shapley's Cooperative Game Theory</title>
+    <updated>2023-09-26T10:38:05Z</updated>
+    <link href="https://arxiv.org/abs/2311.06260v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.06260v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study was based on data analysis of academic histories of civil engineering students at FACET-UNT. Our main objective was to determine the academic performance variables that have a significant impact on the dropout of the career. To do this, we implemented a correlation model using LightGBM (Barbier et al., 2016; Ke et al., 2017; Shi et al., 2022). We use this model to identify the key variables that influence the probability of student dropout.
+  In addition, we use game theory to interpret the results obtained. Specifically, we use the SHAP library (Lundberg et al., 2018, 2020; Lundberg &amp; Lee, 2017) in Python to calculate the Shapley numbers.
+  The results of our study revealed the most important variables that influence the dropout from the civil engineering career. Significant differences were identified in terms of age, time spent in studies, and academic performance, which includes the number of courses passed and the number of exams taken. These results may be useful to develop more effective student retention strategies and improve academic success in this discipline.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-26T10:38:05Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Hugo Roger Paz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2207.09682v2</id>
+    <title>Quantized Training of Gradient Boosting Decision Trees</title>
+    <updated>2023-01-17T09:18:14Z</updated>
+    <link href="https://arxiv.org/abs/2207.09682v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2207.09682v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent years have witnessed significant success in Gradient Boosting Decision Trees (GBDT) for a wide range of machine learning applications. Generally, a consensus about GBDT's training algorithms is gradients and statistics are computed based on high-precision floating points. In this paper, we investigate an essentially important question which has been largely ignored by the previous literature: how many bits are needed for representing gradients in training GBDT? To solve this mystery, we propose to quantize all the high-precision gradients in a very simple yet effective way in the GBDT's training algorithm. Surprisingly, both our theoretical analysis and empirical studies show that the necessary precisions of gradients without hurting any performance can be quite low, e.g., 2 or 3 bits. With low-precision gradients, most arithmetic operations in GBDT training can be replaced by integer operations of 8, 16, or 32 bits. Promisingly, these findings may pave the way for much more efficient training of GBDT from several aspects: (1) speeding up the computation of gradient statistics in histograms; (2) compressing the communication cost of high-precision statistical information during distributed training; (3) the inspiration of utilization and development of hardware architectures which well support low-precision computation for GBDT training. Benchmarked on CPUs, GPUs, and distributed clusters, we observe up to 2$\times$ speedup of our simple quantization strategy compared with SOTA GBDT systems on extensive datasets, demonstrating the effectiveness and potential of the low-precision training of GBDT. The code will be released to the official repository of LightGBM.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-07-20T06:27:06Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yu Shi</name>
+    </author>
+    <author>
+      <name>Guolin Ke</name>
+    </author>
+    <author>
+      <name>Zhuoming Chen</name>
+    </author>
+    <author>
+      <name>Shuxin Zheng</name>
+    </author>
+    <author>
+      <name>Tie-Yan Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.10767v1</id>
+    <title>GBM-based Bregman Proximal Algorithms for Constrained Learning</title>
+    <updated>2023-08-21T14:56:51Z</updated>
+    <link href="https://arxiv.org/abs/2308.10767v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.10767v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As the complexity of learning tasks surges, modern machine learning encounters a new constrained learning paradigm characterized by more intricate and data-driven function constraints. Prominent applications include Neyman-Pearson classification (NPC) and fairness classification, which entail specific risk constraints that render standard projection-based training algorithms unsuitable. Gradient boosting machines (GBMs) are among the most popular algorithms for supervised learning; however, they are generally limited to unconstrained settings. In this paper, we adapt the GBM for constrained learning tasks within the framework of Bregman proximal algorithms. We introduce a new Bregman primal-dual method with a global optimality guarantee when the learning objective and constraint functions are convex. In cases of nonconvex functions, we demonstrate how our algorithm remains effective under a Bregman proximal point framework. Distinct from existing constrained learning algorithms, ours possess a unique advantage in their ability to seamlessly integrate with publicly available GBM implementations such as XGBoost (Chen and Guestrin, 2016) and LightGBM (Ke et al., 2017), exclusively relying on their public interfaces. We provide substantial experimental evidence to showcase the effectiveness of the Bregman algorithm framework. While our primary focus is on NPC and fairness ML, our framework holds significant potential for a broader range of constrained learning applications. The source code is currently freely available at https://github.com/zhenweilin/ConstrainedGBM}{https://github.com/zhenweilin/ConstrainedGBM.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-21T14:56:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhenwei Lin</name>
+    </author>
+    <author>
+      <name>Qi Deng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.05408v1</id>
+    <title>Systematic analysis reveals key microRNAs as diagnostic and prognostic factors in progressive stages of lung cancer</title>
+    <updated>2022-01-14T11:59:34Z</updated>
+    <link href="https://arxiv.org/abs/2201.05408v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.05408v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>MicroRNAs play an indispensable role in numerous biological processes ranging from organismic development to tumor progression.In oncology,these microRNAs constitute a fundamental regulation role in the pathology of cancer that provides the basis for probing into the influences on clinical features through transcriptome data. Previous work focused on machine learning (ML) for searching biomarkers in different cancer databases, but the functions of these biomarkers are fully not clear. Taking lung cancer as a prototype case of study. Through integrating clinical information into the transcripts expression data, we systematically analyzed the effect of microRNA on diagnostic and prognostic factors at deteriorative lung adenocarcinoma (LUAD). After dimension reduction, unsupervised hierarchical clustering was used to find the diagnostic factors which represent the unique expression patterns of microRNA at various patient's stages. In addition, we developed a classification framework, Light Gradient Boosting Machine (LightGBM) and SHAPley Additive explanation (SHAP) algorithm, to screen out the prognostic factors. Enrichment analyses show that the diagnostic and prognostic factors are not only enriched in cancer-related athways, but also involved in many vital cellular signaling transduction and immune responses. These key microRNAs also impact the survival risk of LUAD patients at all (or a specific) stage(s) and some of them target some important Transcription Factors (TF).The key finding is that five microRNAs (hsa-mir-196b, hsa-mir-31, hsa-mir-891a, hsa-mir-34c, and hsa-mir-653) can then serve as not only potential diagnostic factors but also prognostic tools in the monitoring of lung cancer.</summary>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-14T11:59:34Z</published>
+    <arxiv:primary_category term="q-bio.QM"/>
+    <author>
+      <name>Dietrich Kong</name>
+    </author>
+    <author>
+      <name>Ke Wang</name>
+    </author>
+    <author>
+      <name>Qiu-Ning Zhang</name>
+    </author>
+    <author>
+      <name>Zhi-Tong Bing</name>
+    </author>
+  </entry>
+</feed>

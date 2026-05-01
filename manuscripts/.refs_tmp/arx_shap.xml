@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/zGRBrilNWnbnJG0jSc9LLKD8LW8</id>
+  <title>arXiv Query: search_query=all:"SHAP" AND all:"Lundberg"&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-05-01T12:36:03Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22SHAP%22+AND+all:%22Lundberg%22&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>11</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1802.03888v3</id>
+    <title>Consistent Individualized Feature Attribution for Tree Ensembles</title>
+    <updated>2019-03-07T00:06:09Z</updated>
+    <link href="https://arxiv.org/abs/1802.03888v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1802.03888v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Interpreting predictions from tree ensemble methods such as gradient boosting machines and random forests is important, yet feature attribution for trees is often heuristic and not individualized for each prediction. Here we show that popular feature attribution methods are inconsistent, meaning they can lower a feature's assigned importance when the true impact of that feature actually increases. This is a fundamental problem that casts doubt on any comparison between features. To address it we turn to recent applications of game theory and develop fast exact tree solutions for SHAP (SHapley Additive exPlanation) values, which are the unique consistent and locally accurate attribution values. We then extend SHAP values to interaction effects and define SHAP interaction values. We propose a rich visualization of individualized feature attributions that improves over classic attribution summaries and partial dependence plots, and a unique "supervised" clustering (clustering based on feature attributions). We demonstrate better agreement with human intuition through a user study, exponential improvements in run time, improved clustering performance, and better identification of influential features. An implementation of our algorithm has also been merged into XGBoost and LightGBM, see http://github.com/slundberg/shap for details.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-02-12T04:23:03Z</published>
+    <arxiv:comment>Follow-up to 2017 ICML Workshop arXiv:1706.06060</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Scott M. Lundberg</name>
+    </author>
+    <author>
+      <name>Gabriel G. Erion</name>
+    </author>
+    <author>
+      <name>Su-In Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1705.07874v2</id>
+    <title>A Unified Approach to Interpreting Model Predictions</title>
+    <updated>2017-11-25T03:53:32Z</updated>
+    <link href="https://arxiv.org/abs/1705.07874v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1705.07874v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Understanding why a model makes a certain prediction can be as crucial as the prediction's accuracy in many applications. However, the highest accuracy for large modern datasets is often achieved by complex models that even experts struggle to interpret, such as ensemble or deep learning models, creating a tension between accuracy and interpretability. In response, various methods have recently been proposed to help users interpret the predictions of complex models, but it is often unclear how these methods are related and when one method is preferable over another. To address this problem, we present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class unifies six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this unification, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-05-22T17:38:10Z</published>
+    <arxiv:comment>To appear in NIPS 2017</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Scott Lundberg</name>
+    </author>
+    <author>
+      <name>Su-In Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1706.06060v6</id>
+    <title>Consistent feature attribution for tree ensembles</title>
+    <updated>2018-02-17T01:11:50Z</updated>
+    <link href="https://arxiv.org/abs/1706.06060v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.06060v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Note that a newer expanded version of this paper is now available at: arXiv:1802.03888
+  It is critical in many applications to understand what features are important for a model, and why individual predictions were made. For tree ensemble methods these questions are usually answered by attributing importance values to input features, either globally or for a single prediction. Here we show that current feature attribution methods are inconsistent, which means changing the model to rely more on a given feature can actually decrease the importance assigned to that feature. To address this problem we develop fast exact solutions for SHAP (SHapley Additive exPlanation) values, which were recently shown to be the unique additive feature attribution method based on conditional expectations that is both consistent and locally accurate. We integrate these improvements into the latest version of XGBoost, demonstrate the inconsistencies of current methods, and show how using SHAP values results in significantly improved supervised clustering performance. Feature importance values are a key part of understanding widely used models such as gradient boosting trees and random forests, so improvements to them have broad practical implications.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-19T17:03:46Z</published>
+    <arxiv:comment>presented at 2017 ICML Workshop on Human Interpretability in Machine Learning (WHI 2017), Sydney, NSW, Australia</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Scott M. Lundberg</name>
+    </author>
+    <author>
+      <name>Su-In Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.01917v2</id>
+    <title>Provably Accurate Shapley Value Estimation via Leverage Score Sampling</title>
+    <updated>2025-03-10T15:52:54Z</updated>
+    <link href="https://arxiv.org/abs/2410.01917v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.01917v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Originally introduced in game theory, Shapley values have emerged as a central tool in explainable machine learning, where they are used to attribute model predictions to specific input features. However, computing Shapley values exactly is expensive: for a general model with $n$ features, $O(2^n)$ model evaluations are necessary. To address this issue, approximation algorithms are widely used. One of the most popular is the Kernel SHAP algorithm, which is model agnostic and remarkably effective in practice. However, to the best of our knowledge, Kernel SHAP has no strong non-asymptotic complexity guarantees. We address this issue by introducing Leverage SHAP, a light-weight modification of Kernel SHAP that provides provably accurate Shapley value estimates with just $O(n\log n)$ model evaluations. Our approach takes advantage of a connection between Shapley value estimation and agnostic active learning by employing leverage score sampling, a powerful regression tool. Beyond theoretical guarantees, we show that Leverage SHAP consistently outperforms even the highly optimized implementation of Kernel SHAP available in the ubiquitous SHAP library [Lundberg &amp; Lee, 2017].</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-02T18:15:48Z</published>
+    <arxiv:comment>Accepted to ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Christopher Musco</name>
+    </author>
+    <author>
+      <name>R. Teal Witter</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2103.00370v3</id>
+    <title>Axiomatic Explanations for Visual Search, Retrieval, and Similarity Learning</title>
+    <updated>2022-03-16T05:57:59Z</updated>
+    <link href="https://arxiv.org/abs/2103.00370v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.00370v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual search, recommendation, and contrastive similarity learning power technologies that impact billions of users worldwide. Modern model architectures can be complex and difficult to interpret, and there are several competing techniques one can use to explain a search engine's behavior. We show that the theory of fair credit assignment provides a $\textit{unique}$ axiomatic solution that generalizes several existing recommendation- and metric-explainability techniques in the literature. Using this formalism, we show when existing approaches violate "fairness" and derive methods that sidestep these shortcomings and naturally handle counterfactual information. More specifically, we show existing approaches implicitly approximate second-order Shapley-Taylor indices and extend CAM, GradCAM, LIME, SHAP, SBSM, and other methods to search engines. These extensions can extract pairwise correspondences between images from trained $\textit{opaque-box}$ models. We also introduce a fast kernel-based method for estimating Shapley-Taylor indices that require orders of magnitude fewer function evaluations to converge. Finally, we show that these game-theoretic measures yield more consistent explanations for image similarity architectures.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-02-28T01:24:15Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Mark Hamilton</name>
+    </author>
+    <author>
+      <name>Scott Lundberg</name>
+    </author>
+    <author>
+      <name>Lei Zhang</name>
+    </author>
+    <author>
+      <name>Stephanie Fu</name>
+    </author>
+    <author>
+      <name>William T. Freeman</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/9lHEmtfJVozd8tuiAnrt7wHjEVA</id>
+  <title>arXiv Query: search_query=all:"XGBoost" AND all:"scalable tree boosting"&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-05-01T12:36:01Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22XGBoost%22+AND+all:%22scalable+tree+boosting%22&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1603.02754v3</id>
+    <title>XGBoost: A Scalable Tree Boosting System</title>
+    <updated>2016-06-10T23:23:51Z</updated>
+    <link href="https://arxiv.org/abs/1603.02754v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1603.02754v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable end-to-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-03-09T01:11:51Z</published>
+    <arxiv:comment>KDD'16 changed all figures to type1</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Tianqi Chen</name>
+    </author>
+    <author>
+      <name>Carlos Guestrin</name>
+    </author>
+    <arxiv:doi>10.1145/2939672.2939785</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/2939672.2939785" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2111.06924v1</id>
+    <title>A Simple and Fast Baseline for Tuning Large XGBoost Models</title>
+    <updated>2021-11-12T20:17:50Z</updated>
+    <link href="https://arxiv.org/abs/2111.06924v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2111.06924v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>XGBoost, a scalable tree boosting algorithm, has proven effective for many prediction tasks of practical interest, especially using tabular datasets. Hyperparameter tuning can further improve the predictive performance, but unlike neural networks, full-batch training of many models on large datasets can be time consuming. Owing to the discovery that (i) there is a strong linear relation between dataset size &amp; training time, (ii) XGBoost models satisfy the ranking hypothesis, and (iii) lower-fidelity models can discover promising hyperparameter configurations, we show that uniform subsampling makes for a simple yet fast baseline to speed up the tuning of large XGBoost models using multi-fidelity hyperparameter optimization with data subsets as the fidelity dimension. We demonstrate the effectiveness of this baseline on large-scale tabular datasets ranging from $15-70\mathrm{GB}$ in size.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-11-12T20:17:50Z</published>
+    <arxiv:comment>Technical Report</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Sanyam Kapoor</name>
+    </author>
+    <author>
+      <name>Valerio Perrone</name>
+    </author>
+  </entry>
+</feed>

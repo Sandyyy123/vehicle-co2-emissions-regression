@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/b+Z/6VmyB/gJtOFVNMp2DgFUjm4</id>
+  <title>arXiv Query: search_query=all:"vehicle CO2 emissions" AND all:"machine learning"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-05-01T12:35:50Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22vehicle+CO2+emissions%22+AND+all:%22machine+learning%22&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2502.04417v1</id>
+    <title>NeuralMOVES: A lightweight and microscopic vehicle emission estimation model based on reverse engineering and surrogate learning</title>
+    <updated>2025-02-06T14:26:26Z</updated>
+    <link href="https://arxiv.org/abs/2502.04417v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.04417v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The transportation sector significantly contributes to greenhouse gas emissions, necessitating accurate emission models to guide mitigation strategies. Despite its field validation and certification, the industry-standard Motor Vehicle Emission Simulator (MOVES) faces challenges related to complexity in usage, high computational demands, and its unsuitability for microscopic real-time applications. To address these limitations, we present NeuralMOVES, a comprehensive suite of high-performance, lightweight surrogate models for vehicle CO2 emissions. Developed based on reverse engineering and Neural Networks, NeuralMOVES achieves a remarkable 6.013% Mean Average Percentage Error relative to MOVES across extensive tests spanning over two million scenarios with diverse trajectories and the factors regarding environments and vehicles. NeuralMOVES is only 2.4 MB, largely condensing the original MOVES and the reverse engineered MOVES into a compact representation, while maintaining high accuracy. Therefore, NeuralMOVES significantly enhances accessibility while maintaining the accuracy of MOVES, simplifying CO2 evaluation for transportation analyses and enabling real-time, microscopic applications across diverse scenarios without reliance on complex software or extensive computational resources. Moreover, this paper provides, for the first time, a framework for reverse engineering industrial-grade software tailored specifically to transportation scenarios, going beyond MOVES. The surrogate models are available at https://github.com/edgar-rs/neuralMOVES.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-06T14:26:26Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Edgar Ramirez-Sanchez</name>
+    </author>
+    <author>
+      <name>Catherine Tang</name>
+    </author>
+    <author>
+      <name>Yaosheng Xu</name>
+    </author>
+    <author>
+      <name>Nrithya Renganathan</name>
+    </author>
+    <author>
+      <name>Vindula Jayawardana</name>
+    </author>
+    <author>
+      <name>Zhengbing He</name>
+    </author>
+    <author>
+      <name>Cathy Wu</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/TTBhfhsDbqB5sL6n2OAg8S26tpM</id>
+  <title>arXiv Query: search_query=all:"CatBoost" AND all:"categorical"&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-05-01T12:36:03Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22CatBoost%22+AND+all:%22categorical%22&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>26</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1706.09516v5</id>
+    <title>CatBoost: unbiased boosting with categorical features</title>
+    <updated>2019-01-20T20:07:28Z</updated>
+    <link href="https://arxiv.org/abs/1706.09516v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.09516v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents the key algorithmic techniques behind CatBoost, a new gradient boosting toolkit. Their combination leads to CatBoost outperforming other publicly available boosting implementations in terms of quality on a variety of datasets. Two critical algorithmic advances introduced in CatBoost are the implementation of ordered boosting, a permutation-driven alternative to the classic algorithm, and an innovative algorithm for processing categorical features. Both techniques were created to fight a prediction shift caused by a special kind of target leakage present in all currently existing implementations of gradient boosting algorithms. In this paper, we provide a detailed analysis of this problem and demonstrate that proposed algorithms solve it effectively, leading to excellent empirical results.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-28T23:54:25Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Liudmila Prokhorenkova</name>
+    </author>
+    <author>
+      <name>Gleb Gusev</name>
+    </author>
+    <author>
+      <name>Aleksandr Vorobev</name>
+    </author>
+    <author>
+      <name>Anna Veronika Dorogush</name>
+    </author>
+    <author>
+      <name>Andrey Gulin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1810.11363v1</id>
+    <title>CatBoost: gradient boosting with categorical features support</title>
+    <updated>2018-10-24T13:08:24Z</updated>
+    <link href="https://arxiv.org/abs/1810.11363v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1810.11363v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we present CatBoost, a new open-sourced gradient boosting library that successfully handles categorical features and outperforms existing publicly available implementations of gradient boosting in terms of quality on a set of popular publicly available datasets. The library has a GPU implementation of learning algorithm and a CPU implementation of scoring algorithm, which are significantly faster than other gradient boosting libraries on ensembles of similar sizes.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-10-24T13:08:24Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Anna Veronika Dorogush</name>
+    </author>
+    <author>
+      <name>Vasily Ershov</name>
+    </author>
+    <author>
+      <name>Andrey Gulin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.07954v3</id>
+    <title>CatBoost model with synthetic features in application to loan risk assessment of small businesses</title>
+    <updated>2021-06-30T07:29:27Z</updated>
+    <link href="https://arxiv.org/abs/2106.07954v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.07954v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Loan risk for small businesses has long been a complex problem worthy of exploring. Predicting the loan risk can benefit entrepreneurship by developing more jobs for the society. CatBoost (Categorical Boosting) is a powerful machine learning algorithm suitable for dataset with many categorical variables like the dataset for forecasting loan risk. In this paper, we identify the important risk factors that contribute to loan status classification problem. Then we compare the performance between boosting-type algorithms(especially CatBoost) with other traditional yet popular ones. The dataset we adopt in the research comes from the U.S. Small Business Administration (SBA) and holds a very large sample size (899,164 observations and 27 features). In order to make the best use of the important features in the dataset, we propose a technique named "synthetic generation" to develop more combined features based on arithmetic operation, which ends up improving the accuracy and AUC of the original CatBoost model. We obtain a high accuracy of 95.84% and well-performed AUC of 98.80% compared with the existent literature of related research.</summary>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-15T08:17:00Z</published>
+    <arxiv:primary_category term="cs.CE"/>
+    <author>
+      <name>Haoxue Wang</name>
+    </author>
+    <author>
+      <name>Liexin Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.16206v2</id>
+    <title>Zero-Inflated Tweedie Boosted Trees with CatBoost for Insurance Loss Analytics</title>
+    <updated>2024-10-28T10:53:53Z</updated>
+    <link href="https://arxiv.org/abs/2406.16206v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.16206v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we explore advanced modifications to the Tweedie regression model in order to address its limitations in modeling aggregate claims for various types of insurance such as automobile, health, and liability. Traditional Tweedie models, while effective in capturing the probability and magnitude of claims, usually fall short in accurately representing the large incidence of zero claims. Our recommended approach involves a refined modeling of the zero-claim process, together with the integration of boosting methods in order to help leverage an iterative process to enhance predictive accuracy. Despite the inherent slowdown in learning algorithms due to this iteration, several efficient implementation techniques that also help precise tuning of parameters like XGBoost, LightGBM, and CatBoost have emerged. Nonetheless, we chose to utilize CatBoost, an efficient boosting approach that effectively handles categorical and other special types of data. The core contribution of our paper is the assembly of separate modeling for zero claims and the application of tree-based boosting ensemble methods within a CatBoost framework, assuming that the inflated probability of zero is a function of the mean parameter. The efficacy of our enhanced Tweedie model is demonstrated through the application of an insurance telematics dataset, which presents the additional complexity of compositional feature variables. Our modeling results reveal a marked improvement in model performance, showcasing its potential to deliver more accurate predictions suitable for insurance claim analytics.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-23T20:03:55Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Banghee So</name>
+    </author>
+    <author>
+      <name>Emiliano A. Valdez</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2007.04446v1</id>
+    <title>StructureBoost: Efficient Gradient Boosting for Structured Categorical Variables</title>
+    <updated>2020-07-08T21:37:15Z</updated>
+    <link href="https://arxiv.org/abs/2007.04446v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2007.04446v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Gradient boosting methods based on Structured Categorical Decision Trees (SCDT) have been demonstrated to outperform numerical and one-hot-encodings on problems where the categorical variable has a known underlying structure. However, the enumeration procedure in the SCDT is infeasible except for categorical variables with low or moderate cardinality. We propose and implement two methods to overcome the computational obstacles and efficiently perform Gradient Boosting on complex structured categorical variables. The resulting package, called StructureBoost, is shown to outperform established packages such as CatBoost and LightGBM on problems with categorical predictors that contain sophisticated structure. Moreover, we demonstrate that StructureBoost can make accurate predictions on unseen categorical values due to its knowledge of the underlying structure.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-07-08T21:37:15Z</published>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Brian Lucena</name>
+    </author>
+  </entry>
+</feed>

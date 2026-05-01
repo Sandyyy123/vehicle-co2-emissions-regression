@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/otsr+664xcN+k/5LdDz5jMcDvA4</id>
+  <title>arXiv Query: search_query=all:"fuel consumption" AND all:"deep learning"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-05-01T12:36:01Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22fuel+consumption%22+AND+all:%22deep+learning%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>12</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2603.21034v1</id>
+    <title>Fuel Consumption Prediction: A Comparative Analysis of Machine Learning Paradigms</title>
+    <updated>2026-03-22T03:08:22Z</updated>
+    <link href="https://arxiv.org/abs/2603.21034v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.21034v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The automotive industry is under growing pressure to reduce its environmental impact, requiring accurate predictive modeling to support sustainable engineering design. This study examines the factors that determine vehicle fuel consumption from the seminal Motor Trend dataset, identifying the governing physical factors of efficiency through rigorous quantitative analysis. Methodologically, the research uses data sanitization, statistical outlier elimination, and in-depth Exploratory Data Analysis (EDA) to curb the occurrence of multicollinearity between powertrain features. A comparative analysis of machine learning paradigms including Multiple Linear Regression, Support Vector Machines (SVM), and Logistic Regression was carried out to assess predictive efficacy. Findings indicate that SVM Regression is most accurate on continuous prediction (R-squared = 0.889, RMSE = 0.326), and is effective in capturing the non-linear relationships between vehicle mass and engine displacement. In parallel, Logistic Regression proved superior for classification (Accuracy = 90.8%) and showed exceptional recall (0.957) when identifying low-efficiency vehicles. These results challenge the current trend toward black-box deep learning architectures for static physical datasets, providing validation of robust performance by interpretable and well-tuned classical models. The research finds that intrinsic vehicle efficiency is fundamentally determined by physical design parameters, weight and displacement, offering a data-driven framework for how manufacturers should focus on lightweighting and engine downsizing to achieve stringent global sustainability goals.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-22T03:08:22Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Ali Akram</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2208.12028v1</id>
+    <title>Prediction of the energy and exergy performance of F135 PW100 turbofan engine via deep learning</title>
+    <updated>2022-08-24T17:28:58Z</updated>
+    <link href="https://arxiv.org/abs/2208.12028v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.12028v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the present study, the effects of flight-Mach number, flight altitude, fuel types, and intake air temperature on thrust specific fuel consumption, thrust, intake air mass flow rate, thermal and propulsive efficiecies, as well as the exergetic efficiency and the exergy destruction rate in F135 PW100 engine are investigated. Based on the results obtained in the first phase, to model the thermodynamic performance of the aforementioned engine cycle, Flight-Mach number and flight altitude are considered to be 2.5 and 30,000 m, respectively; due to the operational advantage of supersonic flying at high altitude flight conditions, and the higher thrust of hydrogen fuel. Accordingly, in the second phase, taking into account the mentioned flight conditions, an intelligent model has been obtained to predict output parameters (i.e., thrust, thrust specific fuel consumption, and overall exergetic efficiency) using the deep learning method. In the attained deep neural model, the pressure ratio of the high-pressure turbine, fan pressure ratio, turbine inlet temperature, intake air temperature, and bypass ratio are considered input parameters. The provided datasets are randomly divided into two sets: the first one contains 6079 samples for model training and the second set contains 1520 samples for testing. In particular, the Adam optimization algorithm, the cost function of the mean square error, and the active function of rectified linear unit are used to train the network. The results show that the error percentage of the deep neural model is equal to 5.02%, 1.43%, and 2.92% to predict thrust, thrust specific fuel consumption, and overall exergetic efficiency, respectively, which indicates the success of the attained model in estimating the output parameters of the present problem.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-24T17:28:58Z</published>
+    <arxiv:comment>41 pages, 13 figures, 4 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Energy Conversion and Management, Volume 265, 2022, 115775, ISSN 0196-8904</arxiv:journal_ref>
+    <author>
+      <name>Mohammadreza Sabzehali</name>
+    </author>
+    <author>
+      <name>Amir Hossein Rabieeb</name>
+    </author>
+    <author>
+      <name>Mahdi Alibeigia</name>
+    </author>
+    <author>
+      <name>Amir Mosavi</name>
+    </author>
+    <arxiv:doi>10.1016/j.enconman.2022.115775</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.enconman.2022.115775" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.07717v1</id>
+    <title>On the Generalization Properties of Deep Learning for Aircraft Fuel Flow Estimation Models</title>
+    <updated>2024-10-10T08:34:19Z</updated>
+    <link href="https://arxiv.org/abs/2410.07717v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.07717v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accurately estimating aircraft fuel flow is essential for evaluating new procedures, designing next-generation aircraft, and monitoring the environmental impact of current aviation practices. This paper investigates the generalization capabilities of deep learning models in predicting fuel consumption, focusing particularly on their performance for aircraft types absent from the training data. We propose a novel methodology that integrates neural network architectures with domain generalization techniques to enhance robustness and reliability across a wide range of aircraft. A comprehensive dataset containing 101 different aircraft types, separated into training and generalization sets, with each aircraft type set containing 1,000 flights. We employed the base of aircraft data (BADA) model for fuel flow estimates, introduced a pseudo-distance metric to assess aircraft type similarity, and explored various sampling strategies to optimize model performance in data-sparse regions. Our results reveal that for previously unseen aircraft types, the introduction of noise into aircraft and engine parameters improved model generalization. The model is able to generalize with acceptable mean absolute percentage error between 2\% and 10\% for aircraft close to existing aircraft, while performance is below 1\% error for known aircraft in the training set. This study highlights the potential of combining domain-specific insights with advanced machine learning techniques to develop scalable, accurate, and generalizable fuel flow estimation models.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-10T08:34:19Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Gabriel Jarry</name>
+    </author>
+    <author>
+      <name>Ramon Dalmau</name>
+    </author>
+    <author>
+      <name>Philippe Very</name>
+    </author>
+    <author>
+      <name>Junzi Sun</name>
+    </author>
+    <arxiv:doi>10.1016/j.trc.2025.105143</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.trc.2025.105143" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.00139v2</id>
+    <title>Deep Learning based Model Predictive Control for Compression Ignition Engines</title>
+    <updated>2022-08-04T11:09:34Z</updated>
+    <link href="https://arxiv.org/abs/2204.00139v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.00139v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Machine learning (ML) and a nonlinear model predictive controller (NMPC) are used in this paper to minimize the emissions and fuel consumption of a compression ignition engine. In this work machine learning is applied in two methods. In the first application, ML is used to identify a model for implementation in model predictive control optimization problems. In the second application, ML is used as a replacement of the NMPC where the ML controller learns the optimal control action by imitating or mimicking the behavior of the model predictive controller. In this study, a deep recurrent neural network including long-short term memory (LSTM) layers are used to model the emissions and performance of an industrial 4.5 liter 4-cylinder Cummins diesel engine. This model is then used for model predictive controller implementation. Then, a deep learning scheme is deployed to clone the behavior of the developed controller. In the LSTM integration, a novel scheme is used by augmenting hidden and cell states of the network in an NMPC optimization problem. The developed LSTM-NMPC and the imitative NMPC are compared with the Cummins calibrated Engine Control Unit (ECU) model in an experimentally validated engine simulation platform. Results show a significant reduction in Nitrogen Oxides (\nox) emissions and a slight decrease in the injected fuel quantity while maintaining the same load. In addition, the imitative NMPC has a similar performance as the NMPC but with a two orders of magnitude reduction of the computation time.</summary>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-31T23:56:01Z</published>
+    <arxiv:comment>Submitted to Control engineering Practice (Submission date: March 9, 2022) Revised version (Submission date: June 18, 2022) Accepted on July 30, 2022</arxiv:comment>
+    <arxiv:primary_category term="eess.SY"/>
+    <author>
+      <name>Armin Norouzi</name>
+    </author>
+    <author>
+      <name>Saeid Shahpouri</name>
+    </author>
+    <author>
+      <name>David Gordon</name>
+    </author>
+    <author>
+      <name>Alexander Winkler</name>
+    </author>
+    <author>
+      <name>Eugen Nuss</name>
+    </author>
+    <author>
+      <name>Dirk Abel</name>
+    </author>
+    <author>
+      <name>Jakob Andert</name>
+    </author>
+    <author>
+      <name>Mahdi Shahbakhti</name>
+    </author>
+    <author>
+      <name>Charles Robert Koch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.05684v2</id>
+    <title>Flight Time Prediction for Fuel Loading Decisions with a Deep Learning Approach</title>
+    <updated>2021-05-09T07:29:15Z</updated>
+    <link href="https://arxiv.org/abs/2005.05684v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.05684v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Under increasing economic and environmental pressure, airlines are constantly seeking new technologies and optimizing flight operations to reduce fuel consumption. However, the current practice on fuel loading, which has a significant impact on aircraft weight and fuel consumption, has yet to be thoroughly addressed by existing studies. Excess fuel is loaded by dispatchers and (or) pilots to handle fuel consumption uncertainties, primarily caused by flight time uncertainties, which cannot be predicted by current Flight Planning Systems. In this paper, we develop a novel spatial weighted recurrent neural network model to provide better flight time predictions by capturing air traffic information at a national scale based on multiple data sources, including Automatic Dependent Surveillance-Broadcast, Meteorological Aerodrome Reports, and airline records. In this model, a spatial weighted layer is designed to extract spatial dependences among network delay states. Then, a new training procedure associated with the spatial weighted layer is introduced to extract OD-specific spatial weights. Long short-term memory networks are used to extract the temporal behavior patterns of network delay states. Finally, features from delays, weather, and flight schedules are fed into a fully connected neural network to predict the flight time of a particular flight. The proposed model was evaluated using one year of historical data from an airline's real operations. Results show that our model can provide more accurate flight time predictions than baseline methods, especially for flights with extreme delays. We also show that, with the improved flight time prediction, fuel loading can be optimized and resulting in reduced fuel consumption by 0.016%-1.915% without increasing the fuel depletion risk.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-12T11:05:42Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xinting Zhu</name>
+    </author>
+    <author>
+      <name>Lishuai Li</name>
+    </author>
+    <arxiv:doi>10.1016/j.trc.2021.103179</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.trc.2021.103179" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.02887v1</id>
+    <title>Predicting Weekly Fishing Concentration Zones through Deep Learning Integration of Heterogeneous Environmental Spatial Datasets</title>
+    <updated>2025-11-04T13:48:53Z</updated>
+    <link href="https://arxiv.org/abs/2511.02887v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.02887v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The North Indian Ocean, including the Arabian Sea and the Bay of Bengal, represents a vital source of livelihood for coastal communities, yet fishermen often face uncertainty in locating productive fishing grounds. To address this challenge, we present an AI-assisted framework for predicting Potential Fishing Zones (PFZs) using oceanographic parameters such as sea surface temperature and chlorophyll concentration. The approach is designed to enhance the accuracy of PFZ identification and provide region-specific insights for sustainable fishing practices. Preliminary results indicate that the framework can support fishermen by reducing search time, lowering fuel consumption, and promoting efficient resource utilization.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-04T13:48:53Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Chaitanya Rele</name>
+    </author>
+    <author>
+      <name>Aditya Rathod</name>
+    </author>
+    <author>
+      <name>Kaustubh Natu</name>
+    </author>
+    <author>
+      <name>Saurabh Kulkarni</name>
+    </author>
+    <author>
+      <name>Ajay Koli</name>
+    </author>
+    <author>
+      <name>Swapnali Makdey</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2109.00183v1</id>
+    <title>Deep $\mathcal{L}^1$ Stochastic Optimal Control Policies for Planetary Soft-landing</title>
+    <updated>2021-09-01T04:28:38Z</updated>
+    <link href="https://arxiv.org/abs/2109.00183v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2109.00183v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we introduce a novel deep learning based solution to the Powered-Descent Guidance (PDG) problem, grounded in principles of nonlinear Stochastic Optimal Control (SOC) and Feynman-Kac theory. Our algorithm solves the PDG problem by framing it as an $\mathcal{L}^1$ SOC problem for minimum fuel consumption. Additionally, it can handle practically useful control constraints, nonlinear dynamics and enforces state constraints as soft-constraints. This is achieved by building off of recent work on deep Forward-Backward Stochastic Differential Equations (FBSDEs) and differentiable non-convex optimization neural-network layers based on stochastic search. In contrast to previous approaches, our algorithm does not require convexification of the constraints or linearization of the dynamics and is empirically shown to be robust to stochastic disturbances and the initial position of the spacecraft. After training offline, our controller can be activated once the spacecraft is within a pre-specified radius of the landing zone and at a pre-specified altitude i.e., the base of an inverted cone with the tip at the landing zone. We demonstrate empirically that our controller can successfully and safely land all trajectories initialized at the base of this cone while minimizing fuel consumption.</summary>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-09-01T04:28:38Z</published>
+    <arxiv:primary_category term="eess.SY"/>
+    <author>
+      <name>Marcus A. Pereira</name>
+    </author>
+    <author>
+      <name>Camilo A. Duarte</name>
+    </author>
+    <author>
+      <name>Ioannis Exarchos</name>
+    </author>
+    <author>
+      <name>Evangelos A. Theodorou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.00335v1</id>
+    <title>Anomaly Detection in Power Generation Plants with Generative Adversarial Networks</title>
+    <updated>2023-09-30T10:44:05Z</updated>
+    <link href="https://arxiv.org/abs/2310.00335v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.00335v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Anomaly detection is a critical task that involves the identification of data points that deviate from a predefined pattern, useful for fraud detection and related activities. Various techniques are employed for anomaly detection, but recent research indicates that deep learning methods, with their ability to discern intricate data patterns, are well-suited for this task. This study explores the use of Generative Adversarial Networks (GANs) for anomaly detection in power generation plants. The dataset used in this investigation comprises fuel consumption records obtained from power generation plants operated by a telecommunications company. The data was initially collected in response to observed irregularities in the fuel consumption patterns of the generating sets situated at the company's base stations. The dataset was divided into anomalous and normal data points based on specific variables, with 64.88% classified as normal and 35.12% as anomalous. An analysis of feature importance, employing the random forest classifier, revealed that Running Time Per Day exhibited the highest relative importance. A GANs model was trained and fine-tuned both with and without data augmentation, with the goal of increasing the dataset size to enhance performance. The generator model consisted of five dense layers using the tanh activation function, while the discriminator comprised six dense layers, each integrated with a dropout layer to prevent overfitting. Following data augmentation, the model achieved an accuracy rate of 98.99%, compared to 66.45% before augmentation. This demonstrates that the model nearly perfectly classified data points into normal and anomalous categories, with the augmented data significantly enhancing the GANs' performance in anomaly detection. Consequently, this study recommends the use of GANs, particularly when using large datasets, for effective anomaly detection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-30T10:44:05Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Marcellin Atemkeng</name>
+    </author>
+    <author>
+      <name>Toheeb Aduramomi Jimoh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.00142v3</id>
+    <title>Machine Learning Integrated with Model Predictive Control for Imitative Optimal Control of Compression Ignition Engines</title>
+    <updated>2022-08-02T15:01:28Z</updated>
+    <link href="https://arxiv.org/abs/2204.00142v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.00142v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The high thermal efficiency and reliability of the compression-ignition engine makes it the first choice for many applications. For this to continue, a reduction of the pollutant emissions is needed. One solution is the use of machine learning (ML) and model predictive control (MPC) to minimize emissions and fuel consumption, without adding substantial computational cost to the engine controller. ML is developed in this paper for both modeling engine performance and emissions and for imitating the behaviour of an Linear Parameter Varying (LPV) MPC. Using a support vector machine-based linear parameter varying model of the engine performance and emissions, a model predictive controller is implemented for a 4.5 Cummins diesel engine. This online optimized MPC solution offers advantages in minimizing the \nox~emissions and fuel consumption compared to the baseline feedforward production controller. To reduce the computational cost of this MPC, a deep learning scheme is designed to mimic the behavior of the developed controller. The performance in reducing NOx emissions at a constant load by the imitative controller is similar to that of the online optimized MPC compared to the Cummins production controller. In addition, the imitative controller requires 50 times less computation time compared to that of the online MPC optimization.</summary>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-01T00:04:27Z</published>
+    <arxiv:comment>Submitted to Advances in Automotive Control - 10th AAC 2022</arxiv:comment>
+    <arxiv:primary_category term="eess.SY"/>
+    <author>
+      <name>Armin Norouzi</name>
+    </author>
+    <author>
+      <name>Saeid Shahpouri</name>
+    </author>
+    <author>
+      <name>David Gordon</name>
+    </author>
+    <author>
+      <name>Alexander Winkler</name>
+    </author>
+    <author>
+      <name>Eugen Nuss</name>
+    </author>
+    <author>
+      <name>Dirk Abel</name>
+    </author>
+    <author>
+      <name>Jakob Andert</name>
+    </author>
+    <author>
+      <name>Mahdi Shahbakhti</name>
+    </author>
+    <author>
+      <name>Charles Robert Koch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1808.03096v2</id>
+    <title>On feature selection and evaluation of transportation mode prediction strategies</title>
+    <updated>2018-09-05T20:29:07Z</updated>
+    <link href="https://arxiv.org/abs/1808.03096v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1808.03096v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Transportation modes prediction is a fundamental task for decision making in smart cities and traffic management systems. Traffic policies designed based on trajectory mining can save money and time for authorities and the public. It may reduce the fuel consumption and commute time and moreover, may provide more pleasant moments for residents and tourists. Since the number of features that may be used to predict a user transportation mode can be substantial, finding a subset of features that maximizes a performance measure is worth investigating. In this work, we explore wrapper and information retrieval methods to find the best subset of trajectory features. After finding the best classifier and the best feature subset, our results were compared with two related papers that applied deep learning methods and the results showed that our framework achieved better performance. Furthermore, two types of cross-validation approaches were investigated, and the performance results show that the random cross-validation method provides optimistic results.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-08-09T11:27:11Z</published>
+    <arxiv:comment>arXiv admin note: substantial text overlap with arXiv:1807.10876</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mohammad Etemad</name>
+    </author>
+    <author>
+      <name>Amilcar Soares Junior</name>
+    </author>
+    <author>
+      <name>Stan Matwin</name>
+    </author>
+  </entry>
+</feed>
