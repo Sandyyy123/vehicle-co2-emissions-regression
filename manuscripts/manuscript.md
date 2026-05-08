@@ -58,13 +58,13 @@ We use a single random 60/20/20 split with `random_state=42`. Train: 26,886 rows
 
 ### 3.3 Models
 
-Four models share a common preprocessing pipeline: `OneHotEncoder(handle_unknown='ignore')` for categorical columns, median imputation for numeric columns, most-frequent imputation for categorical columns. Numeric columns are standardised only for the linear baseline.
+Four models share a common preprocessing pipeline: `OneHotEncoder(handle_unknown='ignore')` for categorical columns, median imputation for numeric columns, and `SimpleImputer(strategy='constant', fill_value='MISSING')` for categorical columns (a sentinel-token strategy that avoids redistributing missing categoricals onto the modal class). Numeric columns are standardised only for the linear baseline.
 
 **Linear Regression** uses scikit-learn `LinearRegression` defaults and serves as a sanity baseline. With consumption columns present, a linear fit should already capture most of the variance because the consumption-to-CO2 link is approximately linear within a fuel chemistry.
 
-**Random Forest** uses 200 trees, `max_depth=15`, `min_samples_leaf=3`, no scaling. Random Forest is included as a non-parametric baseline robust to mixed-scale features and as a vehicle for impurity-based feature importances [1].
+**Random Forest** uses 200 trees with `max_depth=None` (fully grown trees), the scikit-learn default `min_samples_leaf=1`, `n_jobs=-1`, and no scaling. Random Forest is included as a non-parametric baseline robust to mixed-scale features and as a vehicle for impurity-based feature importances [1]. Fully grown trees are appropriate here because the dominant predictive signal is the near-deterministic consumption-to-CO2 relation, and depth-limited trees would only blunt resolution at the high-CO2 tail without changing the headline ranking.
 
-**XGBoost baseline** uses 200 trees, `max_depth=6`, `learning_rate=0.10`, `subsample=0.9`, `colsample_bytree=0.8`, `tree_method='hist'`. XGBoost has been the de-facto strongest tabular regressor since [3] and remains competitive with deep tabular methods on datasets of this scale [8].
+**XGBoost baseline** uses 400 trees, `max_depth=6`, `learning_rate=0.10`, `subsample=0.9`, `colsample_bytree=0.9`, `tree_method='hist'`. XGBoost has been the de-facto strongest tabular regressor since [3] and remains competitive with deep tabular methods on datasets of this scale [8].
 
 **XGBoost tuned** keeps the backbone, deepens the trees, increases boosting rounds, and slows the learning rate: 400 trees, `max_depth=8`, `learning_rate=0.05`, `subsample=0.9`, `colsample_bytree=0.8`, `tree_method='hist'`. Tuning was guided by validation RMSE; depth beyond 8 and tree count beyond 400 did not improve held-out performance.
 
@@ -85,8 +85,8 @@ Table 1 reports test-fold metrics for the four models with the consumption colum
 | Model | Test RMSE (g/km) | Test MAE (g/km) | Test R2 |
 |---|---|---|---|
 | Linear Regression | 2.095 | 1.175 | 0.9971 |
-| Random Forest (200 trees, depth 15) | 1.940 | 0.208 | 0.9975 |
-| XGBoost baseline (200 trees, depth 6, lr 0.10) | 0.989 | 0.288 | 0.9994 |
+| Random Forest (200 trees, fully grown) | 1.940 | 0.208 | 0.9975 |
+| XGBoost baseline (400 trees, depth 6, lr 0.10) | 0.989 | 0.288 | 0.9994 |
 | XGBoost tuned (400 trees, depth 8, lr 0.05) | 0.949 | 0.156 | 0.9994 |
 
 All four models reach R2 above 0.997, ceiling-bound by the consumption-CO2 physical identity. The ordering is nonetheless informative: even Linear Regression captures the bulk of the variance, Random Forest improves RMSE marginally to 1.940 g/km but achieves the lowest MAE among the baselines (0.208 g/km), and XGBoost approximately halves the RMSE relative to Linear Regression and Random Forest. Tuning the XGBoost model shaves a further 4% off test RMSE (0.989 to 0.949) and almost halves MAE (0.288 to 0.156). The validation-fold RMSE of the tuned model is 0.469 g/km against test 0.949 g/km, suggesting near-duplicate variant rows favoured the validation slice; the gap is not a sign of overfitting in the conventional sense because the same model achieves R2 0.9994 on both folds.
@@ -133,6 +133,8 @@ Hybrid and electric vehicles deserve a specific note. The dataset includes 27 g/
 The methodological contrast with the NeuralMOVES line of work [14] is also worth drawing out. NeuralMOVES learns a microscopic emissions surrogate that ingests instantaneous speed and acceleration to predict instantaneous CO2 and pollutants. Our setup learns a macroscopic, per-cycle CO2 figure from a static vehicle dossier. The two are complementary: a NeuralMOVES-style surrogate, given a vehicle's macroscopic attributes plus a route, could integrate to a real-world CO2 figure that is independent of the homologation cycle and not subject to the lab-real divergence. Bridging the two would require pairing carlab-style attribute data with cycle-resolved fleet trajectories, which is the methodological direction taken by Tsiakmakis and colleagues [19] and Suarez and colleagues for driving style [24].
 
 Limitations of the current modelling setup itself include: row-level rather than brand-level cross-validation; a single random seed without bootstrap confidence intervals on the metrics; no explicit handling of the heteroscedastic right-tail of high-performance vehicles (a robust loss or a log-CO2 target would tighten residuals there); and reliance on impurity-based feature importance rather than SHAP [5, 6]. The first two are easy follow-ups; the third has minor effect on the headline R2 conclusion because two columns dominate so completely; the fourth is the recommended interpretability upgrade for any future deployment.
+
+The first of these limitations deserves emphasis. The 60/20/20 split is row-level: variants from the same `Modele dossier` (and even from the same brand-model pairing) flow into all three folds. The fingerprint of this is visible in the tuned XGBoost results, where validation RMSE is 0.469 g/km against a test RMSE of 0.949 g/km. Although both folds reach R2 of 0.9994 and the model is not overfitting in the classical bias-variance sense, the validation slice contains near-duplicate trim variants of training rows, so the validation metric is structurally optimistic by roughly a factor of two relative to the test metric. The reported generalisation is therefore to unseen variants of seen models rather than to genuinely new vehicle series. For Phase 2, we recommend switching to `GroupKFold` keyed on `Marque + Modele dossier` (or on `Modele dossier` alone). This would force every variant of a given model line into a single fold and yield a cleaner pre-homologation generalisation estimate. We expect the resulting test RMSE in the consumption-included variant to roughly double once near-duplicates are excluded from the training fold, and we expect the leakage-stripped variant to show a much larger jump that more honestly reflects model-line transfer. The Phase 2 brand-level cross-validation is the right framing whenever the model is presented as a forecaster of new vehicle series rather than as a homologation-data QA tool.
 
 ## 6. Conclusion
 
