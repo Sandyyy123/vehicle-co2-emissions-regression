@@ -1,7 +1,7 @@
 # Predicting Tailpipe CO2 Emissions of Passenger Cars from Vehicle Technical Attributes: A Machine Learning Analysis of the ADEME Carlab 2013 Release
 
 **Author:** Sandeep Grover
-**Affiliation:** Independent researcher, Mossingen, Germany
+**Affiliation:** Independent researcher, Germany
 **Dataset:** ADEME carlab, June 2013 snapshot (data.gouv.fr)
 **Project:** ML Engineering Portfolio
 **Date:** May 2026
