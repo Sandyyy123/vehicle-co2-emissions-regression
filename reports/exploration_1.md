@@ -1,7 +1,6 @@
 # Exploration Report 1 - Schema, Missing Values, Basic Stats
 
 **Project:** 05 CO2 emissions by vehicles
-**Track:** Data Analyst, difficulty 6/10
 **Date:** 2026-05-01
 **Notebook:** `notebooks/01_eda.ipynb` (executed end-to-end)
 

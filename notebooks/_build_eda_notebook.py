@@ -22,7 +22,7 @@ def code(src):
 cells = []
 
 cells.append(md(
-    "# Project 5 - CO2 emissions by vehicles\n"
+    "# CO2 emissions by vehicles\n"
     "\n"
     "## Notebook 01: Exploratory Data Analysis\n"
     "\n"
