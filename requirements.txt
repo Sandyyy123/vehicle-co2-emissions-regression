@@ -1,1 +1,10 @@
-nbformat
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.2
+lightgbm>=3.3
+xgboost>=1.7
+matplotlib>=3.6
+seaborn>=0.12
+shap>=0.41
+nbformat>=5.9
+optuna>=3.0
