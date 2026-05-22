@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Vehicle CO2 Emissions Regression — Sandeep Grover</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -42,93 +41,31 @@ footer{text-align:center;padding:32px;color:var(--muted);font-size:.82rem;border
 </style>
 </head>
 <body>
-
 <nav>
   <a href="https://sandyyy123.github.io" class="nav-back">← Portfolio</a>
   <span class="nav-title">Vehicle CO2 Emissions Regression</span>
   <a href="https://github.com/Sandyyy123/vehicle-co2-emissions-regression" target="_blank" class="nav-back" style="margin-left:auto">GitHub ↗</a>
 </nav>
-
 <div class="hero">
   <h1>Vehicle CO2 Emissions Regression</h1>
   <p>Predicts CO2 emissions (g/km) from vehicle specifications using XGBoost with polynomial/interaction features. Framed against EU Fleet CO2 Regulation 2019/631.</p>
   <div class="badges"><span class="badge">XGBoost</span> <span class="badge">EU reg. 2019/631</span> <span class="badge">residual analysis</span></div>
   <div class="metric-bar">✦ Prediction intervals · fleet compliance context</div>
 </div>
-
 <div class="card">
   <div class="section-title">Interactive Demo</div>
   <div class="highlight">XGBoost | EU Regulation 2019/631 | Prediction intervals | Residual analysis</div>
-  <p style="font-size:.82rem;color:#94a3b8;margin-bottom:16px">CO2 Emission Predictor - Live Demo</p>
-  <div class="demo-container"><ul class='classifier-list'>
-<li class="clf-item">
-  <div class="clf-url">2.0L Diesel SUV | 1,850kg | 150hp</div>
-  <div class="clf-result">
-    <span class="clf-badge MALICIOUS">187 g/km</span>
-    <div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px">
-      <div style="width:12%;height:100%;background:#fbbf24;border-radius:4px;transition:width .5s"></div>
-    </div>
-    <span style="font-size:.75rem;color:#94a3b8">0.120</span>
-  </div>
-  <div class="clf-reason" style="margin-top:5px">High displacement diesel, heavy vehicle → above EU 116 g/km target</div>
-</li>
-<li class="clf-item">
-  <div class="clf-url">1.0L Petrol Hatchback | 1,050kg | 90hp</div>
-  <div class="clf-result">
-    <span class="clf-badge SAFE">98 g/km</span>
-    <div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px">
-      <div style="width:88%;height:100%;background:#fbbf24;border-radius:4px;transition:width .5s"></div>
-    </div>
-    <span style="font-size:.75rem;color:#94a3b8">0.880</span>
-  </div>
-  <div class="clf-reason" style="margin-top:5px">Small petrol, light weight → below EU fleet target</div>
-</li>
-<li class="clf-item">
-  <div class="clf-url">2.5L Hybrid | 1,650kg | 210hp</div>
-  <div class="clf-result">
-    <span class="clf-badge SAFE">112 g/km</span>
-    <div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px">
-      <div style="width:62%;height:100%;background:#fbbf24;border-radius:4px;transition:width .5s"></div>
-    </div>
-    <span style="font-size:.75rem;color:#94a3b8">0.620</span>
-  </div>
-  <div class="clf-reason" style="margin-top:5px">Hybrid reduces emissions vs pure ICE equivalent</div>
-</li>
-<li class="clf-item">
-  <div class="clf-url">3.0L V6 Petrol | 2,100kg | 280hp</div>
-  <div class="clf-result">
-    <span class="clf-badge MALICIOUS">231 g/km</span>
-    <div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px">
-      <div style="width:3%;height:100%;background:#fbbf24;border-radius:4px;transition:width .5s"></div>
-    </div>
-    <span style="font-size:.75rem;color:#94a3b8">0.030</span>
-  </div>
-  <div class="clf-reason" style="margin-top:5px">Large displacement, heavy → significantly above target</div>
-</li>
-<li class="clf-item">
-  <div class="clf-url">1.5L Diesel | 1,250kg | 115hp</div>
-  <div class="clf-result">
-    <span class="clf-badge SAFE">119 g/km</span>
-    <div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px">
-      <div style="width:52%;height:100%;background:#fbbf24;border-radius:4px;transition:width .5s"></div>
-    </div>
-    <span style="font-size:.75rem;color:#94a3b8">0.520</span>
-  </div>
-  <div class="clf-reason" style="margin-top:5px">Efficient diesel, near EU 116 g/km fleet target</div>
-</li></ul></div>
-  <div class="stats-grid"><div class="stat-box"><span class="stat-value">8.3 g/km</span><span class="stat-label">RMSE</span></div><div class="stat-box"><span class="stat-value">0.961</span><span class="stat-label">R² Score</span></div><div class="stat-box"><span class="stat-value">116 g/km</span><span class="stat-label">EU Target</span></div><div class="stat-box"><span class="stat-value">12</span><span class="stat-label">Features</span></div></div>
+  <p style="font-size:.82rem;color:#94a3b8;margin-bottom:16px">CO2 Emission Predictor</p>
+  <div class="demo-container"><ul class='classifier-list'><li class="clf-item"><div class="clf-url">2.0L Diesel SUV | 1,850kg | 150hp</div><div class="clf-result"><span class="clf-badge SUSPICIOUS">187 g/km</span><div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px"><div style="width:12%;height:100%;background:#fbbf24;border-radius:4px"></div></div><span style="font-size:.75rem;color:#94a3b8">0.120</span></div><div class="clf-reason" style="margin-top:5px">High displacement diesel, heavy vehicle - above EU 116 g/km target</div></li><li class="clf-item"><div class="clf-url">1.0L Petrol Hatchback | 1,050kg | 90hp</div><div class="clf-result"><span class="clf-badge SUSPICIOUS">98 g/km</span><div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px"><div style="width:88%;height:100%;background:#fbbf24;border-radius:4px"></div></div><span style="font-size:.75rem;color:#94a3b8">0.880</span></div><div class="clf-reason" style="margin-top:5px">Small petrol, light weight - below EU fleet target</div></li><li class="clf-item"><div class="clf-url">2.5L Hybrid | 1,650kg | 210hp</div><div class="clf-result"><span class="clf-badge SUSPICIOUS">112 g/km</span><div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px"><div style="width:62%;height:100%;background:#fbbf24;border-radius:4px"></div></div><span style="font-size:.75rem;color:#94a3b8">0.620</span></div><div class="clf-reason" style="margin-top:5px">Hybrid reduces emissions vs pure ICE equivalent</div></li><li class="clf-item"><div class="clf-url">3.0L V6 Petrol | 2,100kg | 280hp</div><div class="clf-result"><span class="clf-badge SUSPICIOUS">231 g/km</span><div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px"><div style="width:3%;height:100%;background:#fbbf24;border-radius:4px"></div></div><span style="font-size:.75rem;color:#94a3b8">0.030</span></div><div class="clf-reason" style="margin-top:5px">Large displacement, heavy - significantly above target</div></li><li class="clf-item"><div class="clf-url">1.5L Diesel | 1,250kg | 115hp</div><div class="clf-result"><span class="clf-badge SUSPICIOUS">119 g/km</span><div style="flex:1;background:rgba(255,255,255,0.05);border-radius:4px;height:6px;max-width:200px"><div style="width:52%;height:100%;background:#fbbf24;border-radius:4px"></div></div><span style="font-size:.75rem;color:#94a3b8">0.520</span></div><div class="clf-reason" style="margin-top:5px">Efficient diesel, near EU 116 g/km fleet target</div></li></ul></div>
+  <div class="stats-grid"><div class="stat-box"><span class="stat-value">8.3 g/km</span><span class="stat-label">RMSE</span></div><div class="stat-box"><span class="stat-value">0.961</span><span class="stat-label">R2 Score</span></div><div class="stat-box"><span class="stat-value">116 g/km</span><span class="stat-label">EU Target</span></div><div class="stat-box"><span class="stat-value">12</span><span class="stat-label">Features</span></div></div>
 </div>
-
 <div class="card">
   <div class="section-title">Tech Stack</div>
   <div class="badges" style="margin-bottom:0"><span class="badge">XGBoost</span> <span class="badge">EU reg. 2019/631</span> <span class="badge">residual analysis</span></div>
 </div>
-
 <footer>
-  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> ·
-     <a href="https://github.com/Sandyyy123/vehicle-co2-emissions-regression" target="_blank">GitHub Repo</a> ·
-     <a href="https://linkedin.com/in/sandeep-grover-b3192a16" target="_blank">LinkedIn</a></p>
+  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> &nbsp;·&nbsp;
+     <a href="https://github.com/Sandyyy123/vehicle-co2-emissions-regression" target="_blank">View on GitHub</a></p>
 </footer>
-
 </body>
 </html>
